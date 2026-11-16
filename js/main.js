@@ -1,5 +1,5 @@
 import { fetchApps } from './data.js';
-import { renderCardList, renderAppModal, renderIncompatibleCard, openHistoryModal, renderDevModal, renderCategoryModal, renderMenuModal, renderDonateModal } from './ui.js';
+import { renderCardList, renderAppModal, renderIncompatibleCard, openHistoryModal, renderDevModal, renderCategoryModal, renderMenuModal, renderDonateModal, renderWatchfaceMainModal } from './ui.js';
 import { isAppGloballyCompatible, apiMap, escapeHtml, categoryHash, getCategoryByHash, findAppByPrecision, setPageTitle, calculateMatchRatio } from './utils.js';
 import Fuse from './fuse.mjs';
 
@@ -66,13 +66,22 @@ function bindEvents() {
   window.addEventListener('hashchange', checkHashLink);
 }
 
+function safeDecode(str) {
+  try {
+    return decodeURIComponent(str);
+  } catch (e) {
+    return str;
+  }
+}
+
 function checkHashLink() {
   const hash = window.location.hash;
-  const decodedHash = decodeURIComponent(hash);
+  const decodedHash = safeDecode(hash);
 
   const activeModals = Array.from(document.querySelectorAll('.modal-overlay[data-dynamic="true"]'))
     .sort((a, b) => (parseInt(window.getComputedStyle(a).zIndex) || 0) - (parseInt(window.getComputedStyle(b).zIndex) || 0));
 
+  // 1. 回到首页
   if (!hash || hash === '#') {
     closeAllModalsForce();
     const searchTerm = elements.searchInput.value.trim();
@@ -86,18 +95,20 @@ function checkHashLink() {
     return;
   }
 
+  // 2. 智能堆栈拦截（防止返回时丢失滚动位置）
   const existingModal = activeModals.find(m => {
     if (hash === '#menu') return m.getAttribute('data-type') === 'menu';
     if (hash === '#donate') return m.getAttribute('data-type') === 'donate';
-    if (decodedHash.startsWith('#wf-category=')) {
-      const subName = decodedHash.split('=')[1];
-      return m.getAttribute('data-type') === 'category' && m.getAttribute('data-name') === subName;
-    }
 
-    // 处理分类页
     if (decodedHash.startsWith('#category=')) {
       const catName = getCategoryByHash(hash.split('=')[1]);
-      return m.getAttribute('data-type') === 'category' && m.getAttribute('data-name') === catName;
+      const targetName = (catName === "表盘美化" || catName === "表盘专区") ? "表盘专区" : catName;
+      return m.getAttribute('data-type') === 'category' && m.getAttribute('data-name') === targetName;
+    }
+
+    if (hash.startsWith('#wf-category=')) {
+      const subName = safeDecode(hash.substring('#wf-category='.length));
+      return m.getAttribute('data-type') === 'category' && m.getAttribute('data-name') === subName;
     }
 
     if (decodedHash.startsWith('#list=')) {
@@ -106,23 +117,23 @@ function checkHashLink() {
       return m.getAttribute('data-type') === 'category' && m.getAttribute('data-name') === listTitle;
     }
 
-    // 处理应用详情
     if (hash.startsWith('#app=')) {
       const parts = hash.substring(5).split('+');
       return m.getAttribute('data-package') === parts[0] &&
-        m.getAttribute('data-version') === decodeURIComponent(parts[1] || 'unknown') &&
+        m.getAttribute('data-version') === safeDecode(parts[1] || 'unknown') &&
         m.getAttribute('data-code') === (parts[2] || '0') &&
         m.getAttribute('data-type') !== 'history';
     }
 
-    // 处理开发者和历史记录
     if (decodedHash.startsWith('#dev=')) {
       const devName = decodedHash.substring(5).split('&type=')[0];
       return m.getAttribute('data-type') === 'dev' && m.getAttribute('data-dev-name') === devName;
     }
+
     if (hash.startsWith('#history=')) {
       return m.getAttribute('data-type') === 'history' && m.getAttribute('data-package') === hash.split('=')[1].split('+')[0];
     }
+
     return false;
   });
 
@@ -138,6 +149,7 @@ function checkHashLink() {
     return;
   }
 
+  // 3. 渲染新页面逻辑
   if (hash === '#menu') {
     const categories = Array.from(new Set(allApps.map(app => app.category || "其他"))).sort();
     renderMenuModal(categories);
@@ -155,33 +167,19 @@ function checkHashLink() {
       setPageTitle(`WearStore - ${target.name}`);
     }
   }
-  // 列表页 (最新/更新)
-  else if (decodedHash.startsWith('#list=')) {
-    const userApi = parseInt(localStorage.getItem('userApiLevel')) || 0;
-    const type = hash.split('=')[1];
-    let sorted = allApps.filter(a => isAppGloballyCompatible(a, userApi));
-    if (type === 'new') {
-      sorted.sort((a, b) => (b.addedTime || 0) - (a.addedTime || 0));
-      renderCategoryModal("最新上架", sorted.slice(0, 15));
-    } else {
-      sorted.sort((a, b) => new Date(b.updateTime || 0) - new Date(a.updateTime || 0));
-      renderCategoryModal("最近更新", sorted.slice(0, 15));
-    }
-  }
-
   else if (decodedHash.startsWith('#category=')) {
     const key = hash.split('=')[1];
     const catName = getCategoryByHash(key);
     if (catName) {
       const userApi = parseInt(localStorage.getItem('userApiLevel')) || 0;
-
-      if (catName === "表盘美化") {
-        const watchfaces = allApps.filter(a => a.category === "表盘美化" && isAppGloballyCompatible(a, userApi));
-        // 这里传入的第一个参数决定了弹窗顶部的绿色标题
-        import('./ui.js').then(ui => ui.renderWatchfaceMainModal("表盘专区", watchfaces));
+      if (catName === "表盘美化" || catName === "表盘专区") {
+        const watchfaces = allApps.filter(a =>
+          (a.category === "表盘美化" || a.category === "表盘专区") &&
+          isAppGloballyCompatible(a, userApi)
+        );
+        renderWatchfaceMainModal("表盘专区", watchfaces);
         setPageTitle("表盘专区");
       } else {
-        // 其他分类逻辑保持不变
         const filtered = allApps.filter(a => {
           const appCat = (a.category && a.category.trim() !== "") ? a.category : "其他";
           return appCat === catName && isAppGloballyCompatible(a, userApi);
@@ -191,34 +189,56 @@ function checkHashLink() {
       }
     }
   }
-
-  else if (decodedHash.startsWith('#wf-category=')) {
-    const subName = decodedHash.split('=')[1];
+  // 🔥 处理带斜杠等特殊字符的表盘子分类跳转
+  else if (hash.startsWith('#wf-category=')) {
+    const subName = safeDecode(hash.substring('#wf-category='.length));
     const userApi = parseInt(localStorage.getItem('userApiLevel')) || 0;
+
     const filtered = allApps.filter(a => {
-      const appWFSub = (a.WFcategory && a.WFcategory.trim() !== "") ? a.WFcategory : "其他";
-      return a.category === "表盘美化" && appWFSub === subName && isAppGloballyCompatible(a, userApi);
+      const isWF = (a.category === "表盘美化" || a.category === "表盘专区");
+      if (!isWF || !isAppGloballyCompatible(a, userApi)) return false;
+
+      const raw = a.WFcategory;
+      let cats = ["其他"];
+      if (Array.isArray(raw)) {
+        const list = raw.map(c => String(c).trim()).filter(Boolean);
+        if (list.length > 0) cats = list;
+      } else if (typeof raw === 'string' && raw.trim() !== "") {
+        cats = [raw.trim()];
+      }
+      return cats.includes(subName);
     });
+
     renderCategoryModal(subName, filtered);
     setPageTitle(`表盘 - ${subName}`);
   }
+  else if (decodedHash.startsWith('#list=')) {
+    const userApi = parseInt(localStorage.getItem('userApiLevel')) || 0;
+    const type = hash.split('=')[1];
+    let sorted = allApps.filter(a => isAppGloballyCompatible(a, userApi));
+    if (type === 'new') {
+      sorted.sort((a, b) => (b.addedTime || 0) - (a.addedTime || 0));
+      renderCategoryModal("最新上架", sorted.slice(0, 30));
+      setPageTitle("最新上架");
+    } else {
+      sorted.sort((a, b) => new Date(b.updateTime || 0) - new Date(a.updateTime || 0));
+      renderCategoryModal("最近更新", sorted.slice(0, 30));
+      setPageTitle("最近更新");
+    }
+  }
   else if (decodedHash.startsWith('#dev=')) {
-    // 提取作者名称
-    const name = decodedHash.substring(5);
-
-    const filteredApps = allApps.filter(a => {
-      const isOriginalWork = (a.developer === name && !a.modAuthor);
-      const isModWork = (a.modAuthor === name);
-      return isOriginalWork || isModWork;
-    });
-
+    const name = decodedHash.substring(5).split('&type=')[0];
+    const filteredApps = allApps.filter(a => (a.developer === name && !a.modAuthor) || (a.modAuthor === name));
     renderDevModal(name, filteredApps);
     setPageTitle(`${name} 的作品`);
   }
   else if (hash.startsWith('#history=')) {
     const parts = hash.split('=')[1].split('+');
     let app = allApps.find(a => String(a.id) === parts[1]) || allApps.find(a => a.package === parts[0]);
-    if (app) openHistoryModal(app);
+    if (app) {
+      openHistoryModal(app);
+      setPageTitle(`${app.name} - 历史版本`);
+    }
   }
 }
 

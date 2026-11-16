@@ -99,16 +99,7 @@
     ],
     "downloadUrl": "https://download.wearstore.asia/APK/AIDA64-2.21(Android4.4W%2B).apk",
     "developer": "FinalWire Ltd",
-    "historyVersion": [
-      {
-        "_rawCode": 211,
-        "version": "2.11",
-        "code": 211,
-        "minSdk": 20,
-        "size": "4.05 MB",
-        "downloadUrl": "https://download.wearstore.asia/APK/AIDA64%202.11%20(Android%204.4W%20%2B).apk"
-      }
-    ]
+    "historyVersion": []
   },
   {
     "id": 1612916313,
@@ -158,7 +149,8 @@
     "keywords": "",
     "downloadUrl": "https://download.wearstore.asia/APK/AboutTime0.1.0(Android16%2B).apk",
     "developer": "SaigetsuX",
-    "historyVersion": []
+    "historyVersion": [],
+    "WFcategory": "极简"
   },
   {
     "id": 2056030808,
@@ -197,11 +189,11 @@
     "id": 447281565,
     "name": "AnExplorer",
     "package": "dev.dworks.apps.anexplorer",
-    "_rawCode": 60602,
-    "version": "6.0.6",
-    "code": 60602,
+    "_rawCode": 60802,
+    "version": "6.0.8",
+    "code": 60802,
     "minSdk": 25,
-    "size": "56.32 MB",
+    "size": "59.14 MB",
     "icon": "assets/images/anexplorer/anexplorer_icon.webp",
     "screenshots": [
       "assets/images/anexplorer/anexplorer_1.webp",
@@ -214,7 +206,7 @@
       "assets/images/anexplorer/anexplorer_8.webp"
     ],
     "addedTime": 1764730656931,
-    "updateTime": "2026-08-17",
+    "updateTime": "2026-11-16",
     "description": "AnExplorer是一款采用Material You设计的全能文件管理器。它不仅能在手机、平板本地高效管理文件，更独具匠心地支持直接管理您的手表（Wear OS）、电视（Android TV）、汽车（Android Auto）乃至VR设备上的存储，并通过Wi-Fi、网络存储和云服务实现无缝的跨设备文件传输与同步，是管理所有Android生态设备的统一文件管理中心。",
     "category": "系统工具",
     "keywords": [
@@ -226,16 +218,16 @@
       "视频",
       "音乐"
     ],
-    "downloadUrl": "https://download.wearstore.asia/APK/AnExplorer6.0.6(Android7.1%2B).apk",
+    "downloadUrl": "https://download.wearstore.asia/APK/AnExplorer6.0.8(Android7.1%2B).apk",
     "developer": "DWorkS",
     "historyVersion": [
       {
-        "_rawCode": 60102,
-        "version": "6.0.1",
-        "code": 60102,
+        "_rawCode": 60602,
+        "version": "6.0.6",
+        "code": 60602,
         "minSdk": 25,
-        "size": "54.87 MB",
-        "downloadUrl": "https://download.wearstore.asia/APK/AnExplorer6.0.1(Android7.1%2B).apk"
+        "size": "56.32 MB",
+        "downloadUrl": "https://download.wearstore.asia/APK/AnExplorer6.0.6(Android7.1%2B).apk"
       }
     ]
   },
@@ -338,7 +330,8 @@
     ],
     "downloadUrl": "https://download.wearstore.asia/APK/Anime%20flowers%201.1.0%20(Android%2011%20%2B).apk",
     "developer": "Iv Watchface",
-    "historyVersion": []
+    "historyVersion": [],
+    "WFcategory": "二次元/动漫风"
   },
   {
     "id": 1206674815,
@@ -405,7 +398,8 @@
     ],
     "downloadUrl": "https://download.wearstore.asia/APK/Athlete%202%20Lite%201.1.9-wff2%20(Android%2014%20%2B).apk",
     "developer": "amoledwatchfaces™",
-    "historyVersion": []
+    "historyVersion": [],
+    "WFcategory": "仪表盘/数据风"
   },
   {
     "id": 1216509200,
@@ -625,7 +619,8 @@
     ],
     "downloadUrl": "https://download.wearstore.asia/APK/Brush%20Pop%20by%20TIMEFLIK3.0.0(Android14%2B).apk",
     "developer": "TIMEFLIK",
-    "historyVersion": []
+    "historyVersion": [],
+    "WFcategory": "大数字"
   },
   {
     "id": 1377558027,
@@ -715,7 +710,8 @@
     "keywords": "",
     "downloadUrl": "https://download.wearstore.asia/SPLITAPK/Watch%20Face%20CRC068_4.0.1_(Android13%2B).zip",
     "developer": "Creation Cue",
-    "historyVersion": []
+    "historyVersion": [],
+    "WFcategory": "极简"
   },
   {
     "id": 1789130077,
@@ -830,7 +826,8 @@
     ],
     "downloadUrl": "https://download.wearstore.asia/APK/Choffee%20Lite1.0.0(Android11%2B).apk",
     "developer": "RichFace",
-    "historyVersion": []
+    "historyVersion": [],
+    "WFcategory": "仪表盘/数据风"
   },
   {
     "id": 3809635787,
@@ -887,7 +884,8 @@
     ],
     "downloadUrl": "https://download.wearstore.asia/APK/Classes1.0.0(Android14%2B).apk",
     "developer": "TimeShow",
-    "historyVersion": []
+    "historyVersion": [],
+    "WFcategory": "手绘/卡通风"
   },
   {
     "id": 3193627451,
@@ -994,7 +992,8 @@
         "size": "0.79 MB",
         "downloadUrl": "https://download.wearstore.asia/APK/Concentric%201.2.0%20(Android%2013%20%2B).apk"
       }
-    ]
+    ],
+    "WFcategory": "动态表盘"
   },
   {
     "id": 3998009003,
@@ -1167,7 +1166,8 @@
     ],
     "downloadUrl": "https://download.wearstore.asia/APK/Dusk1.1(Android13%2B).apk",
     "developer": "zhou1y",
-    "historyVersion": []
+    "historyVersion": [],
+    "WFcategory": "二次元/动漫风"
   },
   {
     "id": 1687911058,
@@ -1225,7 +1225,8 @@
         "size": "0.36 MB",
         "downloadUrl": "https://download.wearstore.asia/APK/Embassy%203%20Minimal%20Watch%20Face%201.0.0%20(Android%2011%20%2B).apk"
       }
-    ]
+    ],
+    "WFcategory": "大数字"
   },
   {
     "id": 1538194292,
@@ -1248,7 +1249,8 @@
     "downloadUrl": "https://download.wearstore.asia/APK/FORM%20Watch%20Face1.0(Android6%2B).apk",
     "developer": "Roman Nurik",
     "historyVersion": [],
-    "contributor": "清漓染"
+    "contributor": "清漓染",
+    "WFcategory": "抽象类"
   },
   {
     "id": 2752918778,
@@ -1341,7 +1343,8 @@
     "keywords": "",
     "downloadUrl": "https://download.wearstore.asia/SPLITAPK/Felinox1.0.2(Android11%2B).zip",
     "developer": "Meoware Apps",
-    "historyVersion": []
+    "historyVersion": [],
+    "WFcategory": "手绘/卡通风"
   },
   {
     "id": 19735701,
@@ -1558,7 +1561,8 @@
     "keywords": "",
     "downloadUrl": "https://download.wearstore.asia/SPLITAPK/GWC_Watch2.0.0(Android11%2B).zip",
     "developer": "Samtree",
-    "historyVersion": []
+    "historyVersion": [],
+    "WFcategory": "极简"
   },
   {
     "id": 2193154985,
@@ -1585,7 +1589,8 @@
     ],
     "downloadUrl": "https://download.wearstore.asia/APK/Galaxy%20Watch%20Face%201.0.6%20(Android%2011%20%2B).apk",
     "developer": "Prime Design",
-    "historyVersion": []
+    "historyVersion": [],
+    "WFcategory": "极简"
   },
   {
     "id": 3834050182,
@@ -1718,7 +1723,8 @@
     ],
     "downloadUrl": "https://download.wearstore.asia/APK/HarmonyOS%2039(Android9%2B).apk",
     "developer": "Cyber明日香",
-    "historyVersion": []
+    "historyVersion": [],
+    "WFcategory": "动态表盘"
   },
   {
     "id": 2098883575,
@@ -2060,7 +2066,8 @@
     "downloadUrl": "https://download.wearstore.asia/APK/Material%20Islands0.62(Android5%2B).apk",
     "developer": "Jenny Hanell",
     "historyVersion": [],
-    "contributor": "清漓染"
+    "contributor": "清漓染",
+    "WFcategory": "抽象类"
   },
   {
     "id": 2132915689,
@@ -2140,21 +2147,19 @@
     "id": 3099280595,
     "name": "MiGa(米咖)",
     "package": "com.autsing.miga",
-    "_rawCode": 20101,
-    "version": "2.1.1",
-    "code": 20101,
+    "_rawCode": 30001,
+    "version": "3.0.1",
+    "code": 30001,
     "minSdk": 26,
-    "size": "3.19 MB",
+    "size": "2.68 MB",
     "icon": "assets/images/migamika/migamika_icon.webp",
     "screenshots": [
       "assets/images/migamika/migamika_1.webp",
       "assets/images/migamika/migamika_2.webp",
-      "assets/images/migamika/migamika_3.webp",
-      "assets/images/migamika/migamika_4.webp",
-      "assets/images/migamika/migamika_5.webp"
+      "assets/images/migamika/migamika_3.webp"
     ],
     "addedTime": 1769521974520,
-    "updateTime": "2026-05-02",
+    "updateTime": "2026-11-16",
     "description": "一款基于米家 API 开发的第三方智能家居控制应用，专为手表端设计。支持浏览与控制米家设备、查看与触发智能场景，并能通过表盘复杂功能快速操作，是腕上的米家遥控器。\n\n2.1.1\n•修复从卡片运行智能场景时可能会提示空的权限问题\n•修复加载场景的指示器没有正确显示的问题",
     "category": "生活服务",
     "keywords": [
@@ -2165,16 +2170,16 @@
       "zhineng jiaju",
       "kongzhi"
     ],
-    "downloadUrl": "https://download.wearstore.asia/APK/MiGa2.1.1(Android8%2B).apk",
+    "downloadUrl": "https://download.wearstore.asia/APK/MiGa3.0.1(Android8%2B).apk",
     "developer": "AuTsing",
     "historyVersion": [
       {
-        "_rawCode": 20003,
-        "version": "2.0.3",
-        "code": 20003,
+        "_rawCode": 20101,
+        "version": "2.1.1",
+        "code": 20101,
         "minSdk": 26,
-        "size": "3.35 MB",
-        "downloadUrl": "https://download.wearstore.asia/APK/MiGa2.0.3(Android8%2B).apk"
+        "size": "3.19 MB",
+        "downloadUrl": "https://download.wearstore.asia/APK/MiGa2.1.1(Android8%2B).apk"
       }
     ]
   },
@@ -2198,7 +2203,8 @@
     "keywords": [],
     "downloadUrl": "https://download.wearstore.asia/APK/Mickey%2025.01.01%20(Android%2011%20%2B).apk",
     "developer": "",
-    "historyVersion": []
+    "historyVersion": [],
+    "WFcategory": "手绘/卡通风"
   },
   {
     "id": 4153928598,
@@ -2273,7 +2279,8 @@
     ],
     "downloadUrl": "https://download.wearstore.asia/APK/MimickingTiger%204.0.3%20(Android%2013%20%2B).apk",
     "developer": "ZKin",
-    "historyVersion": []
+    "historyVersion": [],
+    "WFcategory": "仪表盘/数据风"
   },
   {
     "id": 1275279526,
@@ -2328,7 +2335,8 @@
     ],
     "downloadUrl": "https://download.wearstore.asia/APK/Minimal%20Analog%20Watch%20Face1.5.0(Android13%2B).apk",
     "developer": "Dsladex",
-    "historyVersion": []
+    "historyVersion": [],
+    "WFcategory": "极简"
   },
   {
     "id": 3503056878,
@@ -2350,7 +2358,8 @@
     "keywords": [],
     "downloadUrl": "https://download.wearstore.asia/APK/MistyBlueDream%204.0.0%20(Android%2011%20%2B).apk",
     "developer": "",
-    "historyVersion": []
+    "historyVersion": [],
+    "WFcategory": "仪表盘/数据风"
   },
   {
     "id": 903364287,
@@ -2410,7 +2419,8 @@
     "keywords": "",
     "downloadUrl": "https://download.wearstore.asia/APK/MonthlyCalender1.0.0(Android13%2B).apk",
     "developer": "DATESa",
-    "historyVersion": []
+    "historyVersion": [],
+    "WFcategory": "游戏爱好者表盘"
   },
   {
     "id": 1964643335,
@@ -2790,17 +2800,18 @@
     "keywords": "",
     "downloadUrl": "https://download.wearstore.asia/APK/OnePlus%20like0.0.1(Android13%2B).apk",
     "developer": "Akichau_Michi",
-    "historyVersion": []
+    "historyVersion": [],
+    "WFcategory": "CMF风格"
   },
   {
     "id": 993156958,
     "name": "Orbit",
     "package": "com.qx.orbit.bili",
-    "_rawCode": 522,
-    "version": "0.5.22-Alpha-full",
-    "code": 522,
+    "_rawCode": 524,
+    "version": "0.5.24-Alpha-full",
+    "code": 524,
     "minSdk": 23,
-    "size": "10.18 MB",
+    "size": "10.33 MB",
     "icon": "assets/images/orbit/orbit_icon.webp",
     "screenshots": [
       "assets/images/orbit/orbit_1.webp",
@@ -2809,8 +2820,8 @@
       "assets/images/orbit/orbit_4.webp"
     ],
     "addedTime": 1786955643123,
-    "updateTime": "2026-11-08",
-    "description": "哔哩终端的 Wear OS 重写项目。\nOrbit 是一个运行在 Wear OS 智能手表上的第三方哔哩哔哩客户端，借鉴了哔哩终端的部分 API 接口调用和 UI 设计。\n使用Jetpack Compose + Wear Material 3实现，网络层重构为Retrofit+Okhttp，相比原项目更加现代。\n目前已经实现大部分基本功能，如看视频、浏览弹幕、发送评论、查看动态、观看直播、离线缓存等等。\n内置 Apsis Player, 支持双模播放引擎切换、双模弹幕引擎切换，支持双指缩放平移手势，可开关弹幕、拖动全屏调节进度等，点击标题区域退出。\n拥有一些首创的特色功能，比如推荐页左滑视频可一键净化（隐藏+报告不感兴趣+拉黑UP主），评论区长按评论可隐藏评论+拉黑发送者。",
+    "updateTime": "2026-11-16",
+    "description": "哔哩终端的 Wear OS 重写项目。\nlite 使用 Media3；full 额外包含 IJKPlayer\nOrbit 是一个运行在 Wear OS 智能手表上的第三方哔哩哔哩客户端，借鉴了哔哩终端的部分 API 接口调用和 UI 设计。\n使用Jetpack Compose + Wear Material 3实现，网络层重构为Retrofit+Okhttp，相比原项目更加现代。\n目前已经实现大部分基本功能，如看视频、浏览弹幕、发送评论、查看动态、观看直播、离线缓存等等。\n内置 Apsis Player, 支持双模播放引擎切换、双模弹幕引擎切换，支持双指缩放平移手势，可开关弹幕、拖动全屏调节进度等，点击标题区域退出。\n拥有一些首创的特色功能，比如推荐页左滑视频可一键净化（隐藏+报告不感兴趣+拉黑UP主），评论区长按评论可隐藏评论+拉黑发送者。\n•Lite（Media3）：充分利用设备硬件解码，能效比很高。播放 4K H.265 视频时，CPU 占用率比 IJKPlayer 低 12-18%。\n•Full（IJKPlayer）：在遇到硬件不支持的格式时会回退到软件解码（用 CPU 计算），导致功耗明显增加。连续播放 1 小时，其耗电量可能比 Media3 多出约 15%。",
     "category": "影音娱乐",
     "keywords": [
       "哔哩哔哩",
@@ -2818,18 +2829,48 @@
       "哔哩终端",
       "视频"
     ],
-    "downloadUrl": "https://download.wearstore.asia/APK/Orbit0.5.22-Alpha-full(Android6%2B).apk",
+    "downloadUrl": "https://download.wearstore.asia/APK/Orbit0.5.24-Alpha-full(Android6%2B).apk",
     "developer": "琴弦上的小医生",
     "historyVersion": [
       {
-        "_rawCode": 521,
-        "version": "0.5.21-Alpha-full",
-        "code": 521,
+        "_rawCode": 522,
+        "version": "0.5.22-Alpha-full",
+        "code": 522,
         "minSdk": 23,
-        "size": "10.10 MB",
-        "downloadUrl": "https://download.wearstore.asia/APK/Orbit0.5.21-Alpha-full(Android6%2B).apk"
+        "size": "10.18 MB",
+        "downloadUrl": "https://download.wearstore.asia/APK/Orbit0.5.22-Alpha-full(Android6%2B).apk"
       }
     ]
+  },
+  {
+    "id": 2212176260,
+    "name": "Orbit Lite",
+    "package": "com.qx.orbit.bili",
+    "_rawCode": 524,
+    "version": "0.5.24-Alpha-lite",
+    "code": 524,
+    "minSdk": 23,
+    "size": "5.68 MB",
+    "icon": "assets/images/orbitlite/orbitlite_icon.webp",
+    "screenshots": [
+      "assets/images/orbitlite/orbitlite_1.webp",
+      "assets/images/orbitlite/orbitlite_2.webp",
+      "assets/images/orbitlite/orbitlite_3.webp",
+      "assets/images/orbitlite/orbitlite_4.webp"
+    ],
+    "addedTime": 1794841745110,
+    "updateTime": "2026-11-16",
+    "description": "哔哩终端的 Wear OS 重写项目。\nlite 使用 Media3；full 额外包含 IJKPlayer\nOrbit 是一个运行在 Wear OS 智能手表上的第三方哔哩哔哩客户端，借鉴了哔哩终端的部分 API 接口调用和 UI 设计。\n使用Jetpack Compose + Wear Material 3实现，网络层重构为Retrofit+Okhttp，相比原项目更加现代。\n目前已经实现大部分基本功能，如看视频、浏览弹幕、发送评论、查看动态、观看直播、离线缓存等等。\n内置 Apsis Player, 支持双模播放引擎切换、双模弹幕引擎切换，支持双指缩放平移手势，可开关弹幕、拖动全屏调节进度等，点击标题区域退出。\n拥有一些首创的特色功能，比如推荐页左滑视频可一键净化（隐藏+报告不感兴趣+拉黑UP主），评论区长按评论可隐藏评论+拉黑发送者。\n•Lite（Media3）：充分利用设备硬件解码，能效比很高。播放 4K H.265 视频时，CPU 占用率比 IJKPlayer 低 12-18%。\n•Full（IJKPlayer）：在遇到硬件不支持的格式时会回退到软件解码（用 CPU 计算），导致功耗明显增加。连续播放 1 小时，其耗电量可能比 Media3 多出约 15%。",
+    "category": "影音娱乐",
+    "keywords": [
+      "哔哩哔哩",
+      "b站",
+      "哔哩终端",
+      "视频"
+    ],
+    "downloadUrl": "https://download.wearstore.asia/APK/Orbit0.5.24-Alpha-lite(Android6%2B).apk",
+    "developer": "琴弦上的小医生",
+    "historyVersion": []
   },
   {
     "id": 670180534,
@@ -2854,7 +2895,8 @@
     ],
     "downloadUrl": "https://download.wearstore.asia/APK/Origin%2039(Android9%2B).apk",
     "developer": "Cyber明日香",
-    "historyVersion": []
+    "historyVersion": [],
+    "WFcategory": "极简"
   },
   {
     "id": 2484839654,
@@ -3049,7 +3091,8 @@
     "keywords": "",
     "downloadUrl": "https://download.wearstore.asia/APK/Physics%20Whiteboard2.2.1(Android11%2B).apk",
     "developer": "The Sleuthing Pineapple",
-    "historyVersion": []
+    "historyVersion": [],
+    "WFcategory": "手绘/卡通风"
   },
   {
     "id": 1690523107,
@@ -3102,7 +3145,8 @@
     "downloadUrl": "https://download.wearstore.asia/APK/Polygon%20Watch%20Face1.0.6(Android6%2B).apk",
     "developer": "Tabula Games Studio",
     "historyVersion": [],
-    "contributor": "清漓染"
+    "contributor": "清漓染",
+    "WFcategory": "抽象类"
   },
   {
     "id": 2388747650,
@@ -3567,7 +3611,8 @@
     ],
     "downloadUrl": "https://download.wearstore.asia/APK/Sera%20Digital1.0.2(Android14%2B).apk",
     "developer": "Pars Watch Faces",
-    "historyVersion": []
+    "historyVersion": [],
+    "WFcategory": "仪表盘/数据风"
   },
   {
     "id": 966577359,
@@ -3593,7 +3638,8 @@
     "downloadUrl": "https://download.wearstore.asia/APK/Shadow%20Clock1.1(Android6%2B).apk",
     "developer": "Craig Ward",
     "historyVersion": [],
-    "contributor": "清漓染"
+    "contributor": "清漓染",
+    "WFcategory": "抽象类"
   },
   {
     "id": 1285888122,
@@ -3651,11 +3697,11 @@
     "id": 4251679535,
     "name": "Simple Memo",
     "package": "com.studio1a23.simplenote",
-    "_rawCode": 7,
-    "version": "1.0.6",
-    "code": 7,
+    "_rawCode": 8,
+    "version": "1.0.7",
+    "code": 8,
     "minSdk": 30,
-    "size": "35.65 MB",
+    "size": "35.66 MB",
     "icon": "assets/images/simplememo/simplememo_icon.webp",
     "screenshots": [
       "assets/images/simplememo/simplememo_1.webp",
@@ -3664,7 +3710,7 @@
       "assets/images/simplememo/simplememo_4.webp"
     ],
     "addedTime": 1766050794931,
-    "updateTime": "2026-07-03",
+    "updateTime": "2026-11-16",
     "description": "一款专为Wear OS设计的轻量级备忘录，让你在手表上快速记录并一键查看重要信息，如密码、车位号等。支持通过应用、表盘复杂功能或磁贴快速访问，输入方式灵活。",
     "category": "效率办公",
     "keywords": [
@@ -3674,16 +3720,16 @@
       "密码备忘",
       "biji"
     ],
-    "downloadUrl": "https://download.wearstore.asia/APK/Simple%20Memo1.0.6(Android11%2B).apk",
+    "downloadUrl": "https://download.wearstore.asia/APK/Simple%20Memo1.0.7(Android11%2B).apk",
     "developer": "Eana Hufwe",
     "historyVersion": [
       {
-        "_rawCode": 6,
-        "version": "1.0.5",
-        "code": 6,
+        "_rawCode": 7,
+        "version": "1.0.6",
+        "code": 7,
         "minSdk": 30,
-        "size": "35.68 MB",
-        "downloadUrl": "https://download.wearstore.asia/APK/Simple%20Memo%201.0.5%20(Android%2011%20%2B).apk"
+        "size": "35.65 MB",
+        "downloadUrl": "https://download.wearstore.asia/APK/Simple%20Memo1.0.6(Android11%2B).apk"
       }
     ]
   },
@@ -4192,11 +4238,11 @@
     "id": 857372679,
     "name": "To-Do List",
     "package": "todolist.scheduleplanner.dailyplanner.todo.reminders",
-    "_rawCode": 2000094,
-    "version": "1.01.19.0725.1",
-    "code": 2000094,
+    "_rawCode": 2000096,
+    "version": "1.02.01.0813",
+    "code": 2000096,
     "minSdk": 25,
-    "size": "6.08 MB",
+    "size": "10.01 MB",
     "icon": "assets/images/todolist/todolist_icon.webp",
     "screenshots": [
       "assets/images/todolist/todolist_1.webp",
@@ -4204,7 +4250,7 @@
       "assets/images/todolist/todolist_3.webp"
     ],
     "addedTime": 1764730696372,
-    "updateTime": "2025-12-15",
+    "updateTime": "2026-11-16",
     "description": "简洁高效的待办事项管理工具，支持跨平台同步、智能提醒与日历视图，助您井井有条地规划工作与生活。",
     "category": "效率办公",
     "keywords": [
@@ -4216,9 +4262,18 @@
       "任务清单",
       "番茄钟"
     ],
-    "downloadUrl": "https://download.wearstore.asia/APK/To-Do%20List%201.01.19.0725.1%20(Android%207.1%20%2B).apk",
+    "downloadUrl": "https://download.wearstore.asia/APK/To-do%20List1.02.01.0813(Android7.1%2B).apk",
     "developer": "Dairy App & Notes & Audio Editor & Voice Recorder",
-    "historyVersion": []
+    "historyVersion": [
+      {
+        "_rawCode": 2000094,
+        "version": "1.01.19.0725.1",
+        "code": 2000094,
+        "minSdk": 25,
+        "size": "6.08 MB",
+        "downloadUrl": "https://download.wearstore.asia/APK/To-Do%20List%201.01.19.0725.1%20(Android%207.1%20%2B).apk"
+      }
+    ]
   },
   {
     "id": 3686047930,
@@ -4705,11 +4760,11 @@
     "id": 1171572150,
     "name": "WearFiles",
     "package": "com.dertefter.wearfiles",
-    "_rawCode": 60008,
-    "version": "3.1.5",
-    "code": 60008,
+    "_rawCode": 60035,
+    "version": "3.2.9",
+    "code": 60035,
     "minSdk": 26,
-    "size": "14.32 MB",
+    "size": "2.72 MB",
     "icon": "assets/images/wearfiles/wearfiles_icon.webp",
     "screenshots": [
       "assets/images/wearfiles/wearfiles_1.webp",
@@ -4717,31 +4772,23 @@
       "assets/images/wearfiles/wearfiles_3.webp"
     ],
     "addedTime": 1767280565881,
-    "updateTime": "2026-08-17",
+    "updateTime": "2026-11-16",
     "description": "一款简洁的开源文件管理器，专为 Wear OS 设计。支持基本的文件查看、删除、复制粘贴操作，并可置顶常用文件/文件夹。使用前需通过ADB手动授予文件权限。\n\nWearFiles需要存储权限，请执行以下adb命令：\nadb shell appops set --uid com.dertefter.wearfiles MANAGE_EXTERNAL_STORAGE allow",
     "category": "系统工具",
     "keywords": [
       "文件管理",
       "wenjianguanli"
     ],
-    "downloadUrl": "https://download.wearstore.asia/APK/WearFiles3.1.5(Android8%2B).apk",
+    "downloadUrl": "https://download.wearstore.asia/APK/WearFiles3.2.9(Android8%2B).apk",
     "developer": "Dertefter Labs",
     "historyVersion": [
       {
-        "_rawCode": 60004,
-        "version": "3.1.3",
-        "code": 60004,
+        "_rawCode": 60008,
+        "version": "3.1.5",
+        "code": 60008,
         "minSdk": 26,
-        "size": "14.14 MB",
-        "downloadUrl": "https://download.wearstore.asia/APK/WearFiles3.1.3(Android8%2B).apk"
-      },
-      {
-        "_rawCode": 38,
-        "version": "2.1.3",
-        "code": 38,
-        "minSdk": 32,
-        "size": "12.96 MB",
-        "downloadUrl": "https://download.wearstore.asia/SPLITAPK/WearFiles2.1.3(Android12L%2B).zip"
+        "size": "14.32 MB",
+        "downloadUrl": "https://download.wearstore.asia/APK/WearFiles3.1.5(Android8%2B).apk"
       }
     ]
   },
@@ -4922,11 +4969,11 @@
     "id": 652737322,
     "name": "WearPod",
     "package": "site.whitezaak.wearpod",
-    "_rawCode": 149,
-    "version": "1.4.9",
-    "code": 149,
+    "_rawCode": 1006002,
+    "version": "1.6.2",
+    "code": 1006002,
     "minSdk": 30,
-    "size": "4.01 MB",
+    "size": "4.42 MB",
     "icon": "assets/images/wearpod/wearpod_icon.webp",
     "screenshots": [
       "assets/images/wearpod/wearpod_1.webp",
@@ -4937,7 +4984,7 @@
       "assets/images/wearpod/wearpod_6.webp"
     ],
     "addedTime": 1774603367886,
-    "updateTime": "2026-06-01",
+    "updateTime": "2026-11-16",
     "description": "WearPod 是一款专为安卓手表设计的泛用型播客客户端。\n✨ 功能特性\n独立使用：使用手机蓝牙网络或手表独立eSim，在手表上播客节目的拉取、播放、下载播客节目；\n离线收听：支持将节目下载至本地存储，告别断网焦虑；\n支持播客节目ShowNote显示；\n支持播客播放进度断点记忆；\n在播放页右侧滑动可调节播放进度；\n支持睡眠定时；\n使用与小米Watch5、OPPO X2等非Google组件不全的安卓手表；",
     "category": "影音娱乐",
     "keywords": [
@@ -4948,9 +4995,18 @@
       "boke",
       "tingyinpin"
     ],
-    "downloadUrl": "https://download.wearstore.asia/APK/WearPod1.4.9(Android11%2B).apk",
+    "downloadUrl": "https://download.wearstore.asia/APK/WearPod1.6.2(Android11%2B).apk",
     "developer": "lyizhuo",
-    "historyVersion": []
+    "historyVersion": [
+      {
+        "_rawCode": 149,
+        "version": "1.4.9",
+        "code": 149,
+        "minSdk": 30,
+        "size": "4.01 MB",
+        "downloadUrl": "https://download.wearstore.asia/APK/WearPod1.4.9(Android11%2B).apk"
+      }
+    ]
   },
   {
     "id": 1750027491,
@@ -5272,11 +5328,11 @@
     "id": 1088903387,
     "name": "YaFeed",
     "package": "com.w57736e.yafeed",
-    "_rawCode": 5,
-    "version": "1.5.3",
-    "code": 5,
+    "_rawCode": 8,
+    "version": "1.6.3",
+    "code": 8,
     "minSdk": 28,
-    "size": "5.66 MB",
+    "size": "5.91 MB",
     "icon": "assets/images/yafeed/yafeed_icon.webp",
     "screenshots": [
       "assets/images/yafeed/yafeed_1.webp",
@@ -5286,7 +5342,7 @@
       "assets/images/yafeed/yafeed_5.webp"
     ],
     "addedTime": 1774603368732,
-    "updateTime": "2026-03-27",
+    "updateTime": "2026-11-16",
     "description": "为什么选择 YaFeed？现有的 RSS 阅读器缺乏完善的图片支持，界面设计过时，性能低下，布局也存在问题。YaFeed 的诞生正是为了解决这些问题，它为 Android 移动设备和 Wear OS 系统提供了一个现代化的、高性能的解决方案。\n\n一款适用于 Android 手机和 Wear OS 的现代化 RSS 阅读器，支持图像显示，拥有美观的用户界面和优化的性能。\n\n✨ 特点\n📱双平台：原生支持 Android 移动设备和 Wear OS\n🖼️图片支持：通过云存储集成在 RSS 源中显示图片\n🎨现代用户界面：采用 Material 3 设计，并针对 Wear OS 进行了组件优化\n⚡高性能：优化了启动、滚动和图像加载速度\n🔄双向同步：支持通过连接检测实现移动设备与 Wear 设备的同步\n📝 Markdown 渲染：使用自定义 Wear OS 渲染器显示丰富的内容",
     "category": "学习充电",
     "keywords": [
@@ -5296,9 +5352,19 @@
       "xinwen",
       "yuedu"
     ],
-    "downloadUrl": "https://download.wearstore.asia/APK/YaFeed%E6%89%8B%E8%A1%A81.5.3(Android9%2B).apk",
+    "downloadUrl": "https://download.wearstore.asia/APK/WATCH.YaFeed1.6.3(Android9%2B).apk",
+    "phoneLink": "https://pan.baidu.com/s/1_HfMHYBk2xIQZSDSh1NyRg?pwd=kvem",
     "developer": "1Shin",
-    "historyVersion": []
+    "historyVersion": [
+      {
+        "_rawCode": 5,
+        "version": "1.5.3",
+        "code": 5,
+        "minSdk": 28,
+        "size": "5.66 MB",
+        "downloadUrl": "https://download.wearstore.asia/APK/YaFeed%E6%89%8B%E8%A1%A81.5.3(Android9%2B).apk"
+      }
+    ]
   },
   {
     "id": 3816311160,
@@ -5370,7 +5436,8 @@
     ],
     "downloadUrl": "https://download.wearstore.asia/APK/%5B69D%5D%20CYBER1.0.6(Android13%2B).apk",
     "developer": "69 Design",
-    "historyVersion": []
+    "historyVersion": [],
+    "WFcategory": "游戏爱好者表盘"
   },
   {
     "id": 2505317145,
@@ -5470,7 +5537,8 @@
     ],
     "downloadUrl": "https://download.wearstore.asia/APK/artifun.fishcat.watchface1.1.9(Android13%2B).apk",
     "developer": "artifun",
-    "historyVersion": []
+    "historyVersion": [],
+    "WFcategory": "手绘/卡通风"
   },
   {
     "id": 3482930519,
@@ -6322,11 +6390,11 @@
     "id": 1000782090,
     "name": "‎Complications Suite",
     "package": "com.weartools.weekdayutccomp",
-    "_rawCode": 10020407,
-    "version": "4.0.7-wear",
-    "code": 10020407,
+    "_rawCode": 10020413,
+    "version": "4.1.3-wear",
+    "code": 10020413,
     "minSdk": 27,
-    "size": "4.80 MB",
+    "size": "4.12 MB",
     "icon": "assets/images/complicationssuite/complicationssuite_icon.webp",
     "screenshots": [
       "assets/images/complicationssuite/complicationssuite_1.webp",
@@ -6336,7 +6404,7 @@
       "assets/images/complicationssuite/complicationssuite_5.webp"
     ],
     "addedTime": 1767280567619,
-    "updateTime": "2026-08-17",
+    "updateTime": "2026-11-16",
     "description": "一款为 Wear OS 表盘提供丰富自定义复杂功能的扩展应用，包含活动启动器、加密货币价格、月相、自定义目标等数十种默认表盘不具备的增强型信息组件。",
     "category": "系统工具",
     "keywords": [
@@ -6345,16 +6413,16 @@
       "信息扩展",
       "月相"
     ],
-    "downloadUrl": "https://download.wearstore.asia/APK/Complications%20Suite4.0.7-wear(Android8.1%2B).apk",
+    "downloadUrl": "https://download.wearstore.asia/APK/Complications%20Suite4.1.3-wear(Android8.1%2B).apk",
     "developer": "amoledwatchfaces™",
     "historyVersion": [
       {
-        "_rawCode": 10020403,
-        "version": "4.0.3-wear",
-        "code": 10020403,
+        "_rawCode": 10020407,
+        "version": "4.0.7-wear",
+        "code": 10020407,
         "minSdk": 27,
-        "size": "4.45 MB",
-        "downloadUrl": "https://download.wearstore.asia/APK/Complications%20Suite4.0.3-wear(Android8.1%2B).apk"
+        "size": "4.80 MB",
+        "downloadUrl": "https://download.wearstore.asia/APK/Complications%20Suite4.0.7-wear(Android8.1%2B).apk"
       }
     ]
   },
@@ -10995,11 +11063,11 @@
     "id": 698535126,
     "name": "腕上RSS",
     "package": "com.lightningstudio.watchrss",
-    "_rawCode": 12,
-    "version": "1.2.0-5",
-    "code": 12,
+    "_rawCode": 46,
+    "version": "1.3.3-5",
+    "code": 46,
     "minSdk": 30,
-    "size": "22.79 MB",
+    "size": "25.03 MB",
     "icon": "assets/images/wanshangrss/wanshangrss_icon.webp",
     "screenshots": [
       "assets/images/wanshangrss/wanshangrss_1.webp",
@@ -11007,7 +11075,7 @@
       "assets/images/wanshangrss/wanshangrss_3.webp"
     ],
     "addedTime": 1779785003195,
-    "updateTime": "2026-06-09",
+    "updateTime": "2026-11-16",
     "description": "一款专为可穿戴手表定制的内容聚合应用，聚合哔哩哔哩、抖音轻量化浏览与通用RSS阅读功能。支持关注UP主动态预览、短视频文字摘要、一键收藏（同步手机端），以及自定义RSS源订阅、已读未读标记、分类管理等，旨在提供轻量化、高效化的腕上内容消费体验。",
     "category": "学习充电",
     "keywords": [
@@ -11018,16 +11086,16 @@
       "wanshang rss",
       "yuedu"
     ],
-    "downloadUrl": "https://download.wearstore.asia/APK/%E8%85%95%E4%B8%8ARSS1.2.0-5(Android11%2B).apk",
+    "downloadUrl": "https://download.wearstore.asia/APK/%E8%85%95%E4%B8%8ARSS1.3.3-5(Android11%2B).apk",
     "developer": "闪电工作室",
     "historyVersion": [
       {
-        "_rawCode": 3,
-        "version": "1.1",
-        "code": 3,
+        "_rawCode": 12,
+        "version": "1.2.0-5",
+        "code": 12,
         "minSdk": 30,
-        "size": "22.60 MB",
-        "downloadUrl": "https://download.wearstore.asia/APK/%E8%85%95%E4%B8%8ARSS1.1(Android11%2B).apk"
+        "size": "22.79 MB",
+        "downloadUrl": "https://download.wearstore.asia/APK/%E8%85%95%E4%B8%8ARSS1.2.0-5(Android11%2B).apk"
       }
     ]
   },

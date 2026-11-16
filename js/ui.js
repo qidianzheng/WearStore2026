@@ -56,16 +56,17 @@ export function renderCategoryModal(title, appsList) { createWindow(title, appsL
 function createWindow(title, list, type, attr) {
   let maxZ = 1300;
   document.querySelectorAll('.modal-overlay').forEach(el => maxZ = Math.max(maxZ, parseInt(window.getComputedStyle(el).zIndex) || 1300));
-
   const m = document.createElement('div');
   m.className = 'modal-overlay';
   m.style.zIndex = maxZ + 10;
   m.setAttribute('data-type', type);
   m.setAttribute(attr, title);
   m.setAttribute('data-dynamic', 'true');
-  const isWatchface = list.length > 0 && list[0].category === "表盘美化";
-  const isBigMode = (type === 'dev') || (title === '表盘美化') || isWatchface;
+
+  const isWatchface = list.length > 0 && (list[0].category === "表盘美化" || list[0].category === "表盘专区");
+  const isBigMode = (type === 'dev') || (title === '表盘美化') || (title === '表盘专区') || isWatchface;
   const gridClass = isBigMode ? 'big-cards-grid' : 'cards-grid';
+
   m.innerHTML = `
         <div class="modal">
             <div class="dev-modal-layout">
@@ -80,13 +81,8 @@ function createWindow(title, list, type, attr) {
         </div>`;
 
   const container = m.querySelector(`.${gridClass}`);
-  if (list.length === 0) {
-    container.innerHTML = '<div class="no-result-tip">暂无相关内容</div>';
-  } else {
-    list.forEach(app => {
-      container.appendChild(createCard(app, isBigMode));
-    });
-  }
+  if (list.length === 0) container.innerHTML = '<div class="no-result-tip">暂无兼容该系统的应用</div>';
+  else list.forEach(app => container.appendChild(createCard(app, isBigMode)));
 
   m.querySelector('.header-close-img').onclick = () => smartBack();
   document.body.appendChild(m);
@@ -456,9 +452,23 @@ export function renderAppModal(app) {
   setTimeout(() => m.classList.add('active'), 10);
 }
 
+function getAppWFCategories(app) {
+  const raw = app.WFcategory;
+  if (Array.isArray(raw)) {
+    const list = raw.map(c => String(c).trim()).filter(Boolean);
+    return list.length > 0 ? list : ["其他"];
+  }
+  if (typeof raw === 'string' && raw.trim() !== "") {
+    return [raw.trim()];
+  }
+  return ["其他"];
+}
+
 export function renderWatchfaceMainModal(title, appsList) {
   let maxZ = 1300;
-  document.querySelectorAll('.modal-overlay').forEach(el => maxZ = Math.max(maxZ, parseInt(window.getComputedStyle(el).zIndex) || 1300));
+  document.querySelectorAll('.modal-overlay').forEach(el => {
+    maxZ = Math.max(maxZ, parseInt(window.getComputedStyle(el).zIndex) || 1300);
+  });
 
   const m = document.createElement('div');
   m.className = 'modal-overlay';
@@ -467,35 +477,24 @@ export function renderWatchfaceMainModal(title, appsList) {
   m.setAttribute('data-name', title);
   m.setAttribute('data-dynamic', 'true');
 
-  // 1. 数据分组
+  // 1. 按 WFcategory 分组
   const groups = {};
   appsList.forEach(app => {
-    const wfCat = (app.WFcategory && app.WFcategory.trim() !== "") ? app.WFcategory : "其他";
-    if (!groups[wfCat]) groups[wfCat] = [];
-    groups[wfCat].push(app);
+    const wfCats = getAppWFCategories(app);
+    wfCats.forEach(wfCat => {
+      if (!groups[wfCat]) groups[wfCat] = [];
+      groups[wfCat].push(app);
+    });
   });
 
+  // 2. 排序（“其他”放最后）
   const sortedCats = Object.keys(groups).sort((a, b) => {
     if (a === "其他") return 1;
     if (b === "其他") return -1;
     return a.localeCompare(b, 'zh');
   });
 
-  // 2. 构建 HTML
-  let contentHtml = '';
-  sortedCats.forEach(catName => {
-    contentHtml += `
-            <div class="wf-category-card">
-                <div class="wf-category-header" onclick="window.location.hash='wf-category=${encodeURIComponent(catName)}'">
-                    <div class="wf-category-title">${escapeHtml(catName)}</div>
-                    <span class="material-symbols-rounded">arrow_forward</span>
-                </div>
-                <div class="wf-category-grid" id="grid-${catName.replace(/\s+/g, '-')}">
-                    <!-- 大图标卡片将填入此处 -->
-                </div>
-            </div>`;
-  });
-
+  // 3. 创建窗口外壳
   m.innerHTML = `
         <div class="modal">
             <div class="dev-modal-layout">
@@ -503,21 +502,44 @@ export function renderWatchfaceMainModal(title, appsList) {
                     <span>${escapeHtml(title)}</span>
                     <span class="material-symbols-rounded header-close-img">close</span>
                 </div>
-                <div class="dev-content">
-                    ${contentHtml || '<div class="no-result-tip">暂无相关表盘内容</div>'}
-                </div>
+                <div class="dev-content"></div>
             </div>
         </div>`;
 
-  // 3. 填充预览卡片
-  sortedCats.forEach(catName => {
-    const grid = m.querySelector(`#grid-${catName.replace(/\s+/g, '-')}`);
-    if (grid) {
+  const devContent = m.querySelector('.dev-content');
+
+  // 4. 直接用 DOM 创建节点并绑定事件，完全不使用 id="grid-..." 和 querySelector
+  if (sortedCats.length === 0) {
+    devContent.innerHTML = '<div class="no-result-tip">暂无相关表盘内容</div>';
+  } else {
+    sortedCats.forEach(catName => {
+      const cardEl = document.createElement('div');
+      cardEl.className = 'wf-category-card';
+
+      // 标题行
+      const headerEl = document.createElement('div');
+      headerEl.className = 'wf-category-header';
+      headerEl.innerHTML = `
+                <div class="wf-category-title">${escapeHtml(catName)}</div>
+                <span class="material-symbols-rounded">arrow_forward</span>
+            `;
+      // 点击跳转至二级分类页（encodeURIComponent 会把 / 安全转义为 %2F）
+      headerEl.onclick = () => {
+        window.location.hash = `wf-category=${encodeURIComponent(catName)}`;
+      };
+
+      // 图标网格
+      const gridEl = document.createElement('div');
+      gridEl.className = 'wf-category-grid';
       groups[catName].slice(0, 8).forEach(app => {
-        grid.appendChild(createCard(app, true));
+        gridEl.appendChild(createCard(app, true));
       });
-    }
-  });
+
+      cardEl.appendChild(headerEl);
+      cardEl.appendChild(gridEl);
+      devContent.appendChild(cardEl);
+    });
+  }
 
   m.querySelector('.header-close-img').onclick = () => smartBack();
   document.body.appendChild(m);
