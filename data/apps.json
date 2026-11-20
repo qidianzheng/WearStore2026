@@ -153,6 +153,29 @@
     "WFcategory": "极简"
   },
   {
+    "id": 3446840189,
+    "name": "AeroX",
+    "package": "com.watchfacestudio.aerox",
+    "_rawCode": 10000008,
+    "version": "1.0.4",
+    "code": 10000008,
+    "minSdk": 33,
+    "size": "0.54 MB",
+    "icon": "assets/images/aerox/aerox_icon.webp",
+    "screenshots": [
+      "assets/images/aerox/aerox_1.webp",
+      "assets/images/aerox/aerox_2.webp"
+    ],
+    "addedTime": 1795142082136,
+    "updateTime": "2026-11-20",
+    "description": "AeroX 表盘应用，原始信息未提供详细描述。",
+    "category": "表盘美化",
+    "keywords": [],
+    "downloadUrl": "https://download.wearstore.asia/SPLITAPK/AeroX1.0.4(Android13%2B).zip",
+    "developer": "DigitX Watchfaces",
+    "historyVersion": []
+  },
+  {
     "id": 2056030808,
     "name": "Alti-Barometer汉化版",
     "package": "com.lucaboscolomeneguolo.altimeterbarometer",
@@ -801,6 +824,32 @@
     "WFcategory": "大数字"
   },
   {
+    "id": 2154247048,
+    "name": "Chibi Apex Watch Face",
+    "package": "jp.ne.sakura.tomatojuice.apexface",
+    "_rawCode": 11000012,
+    "version": "3.2.1",
+    "code": 11000012,
+    "minSdk": 34,
+    "size": "10.10 MB",
+    "icon": "assets/images/chibiapexwatchface/chibiapexwatchface_icon.webp",
+    "screenshots": [
+      "assets/images/chibiapexwatchface/chibiapexwatchface_1.webp",
+      "assets/images/chibiapexwatchface/chibiapexwatchface_2.webp",
+      "assets/images/chibiapexwatchface/chibiapexwatchface_3.webp"
+    ],
+    "addedTime": 1795142086161,
+    "updateTime": "2026-11-20",
+    "description": "非官方粉丝制作的 Wear OS 表盘，灵感来自热门大逃杀游戏；提供28个手绘Q版角色背景、9种配色主题、平滑秒针开关、电量显示开关，并基于 WFF 优化省电。",
+    "category": "表盘美化",
+    "keywords": [
+      "Q版角色"
+    ],
+    "downloadUrl": "https://download.wearstore.asia/APK/Chibi%20Apex%20Watch%20Face3.2.1(Android14%2B).apk",
+    "developer": "RatoLab(TomatoJuice)",
+    "historyVersion": []
+  },
+  {
     "id": 555611071,
     "name": "Choffee Lite",
     "package": "watch.richface.app.choffee",
@@ -1118,11 +1167,11 @@
     "id": 1102278663,
     "name": "DrawFunc",
     "package": "com.functiondrawer.watch",
-    "_rawCode": 3,
-    "version": "1.1",
-    "code": 3,
+    "_rawCode": 95,
+    "version": "1.2",
+    "code": 95,
     "minSdk": 24,
-    "size": "1.28 MB",
+    "size": "1.47 MB",
     "icon": "assets/images/drawfunc/drawfunc_icon.webp",
     "screenshots": [
       "assets/images/drawfunc/drawfunc_1.webp",
@@ -1130,7 +1179,7 @@
       "assets/images/drawfunc/drawfunc_3.webp"
     ],
     "addedTime": 1791881612987,
-    "updateTime": "2026-10-13",
+    "updateTime": "2026-11-20",
     "description": "模仿Geogebra制作的函数绘制器，拥有Geogebra上面一些常用的功能，应用做了屏幕的自适应。复平面功能尚未完成，圆锥曲线绘制功能待完善。",
     "category": "学习充电",
     "keywords": [
@@ -1139,9 +1188,18 @@
       "数学工具",
       "hanshu"
     ],
-    "downloadUrl": "https://download.wearstore.asia/APK/DrawFunc1.1(Android7%2B).apk",
+    "downloadUrl": "https://download.wearstore.asia/APK/DrawFunc1.2(Android7%2B).apk",
     "developer": "春羽",
-    "historyVersion": []
+    "historyVersion": [
+      {
+        "_rawCode": 3,
+        "version": "1.1",
+        "code": 3,
+        "minSdk": 24,
+        "size": "1.28 MB",
+        "downloadUrl": "https://download.wearstore.asia/APK/DrawFunc1.1(Android7%2B).apk"
+      }
+    ]
   },
   {
     "id": 4228665337,
@@ -1446,13 +1504,13 @@
   },
   {
     "id": 2880562203,
-    "name": "Flue",
+    "name": "Flue Next",
     "package": "com.flue.launcher",
-    "_rawCode": 28,
-    "version": "2.3.3",
-    "code": 28,
+    "_rawCode": 30,
+    "version": "2.3.5",
+    "code": 30,
     "minSdk": 27,
-    "size": "18.93 MB",
+    "size": "18.97 MB",
     "icon": "assets/images/flue/flue_icon.webp",
     "screenshots": [
       "assets/images/flue/flue_1.webp",
@@ -1461,7 +1519,7 @@
       "assets/images/flue/flue_4.webp"
     ],
     "addedTime": 1777017830878,
-    "updateTime": "2026-09-30",
+    "updateTime": "2026-11-20",
     "description": "Flue 是一个面向 Android 手表的自定义桌面启动器，基于 Kotlin 与 Jetpack Compose 打造，目标是让华强北手表用户拥有接近大厂手表桌面启动器动画的流畅体验。\n目前已支持以下功能\n丝滑流畅的过渡动画与打断动画\n类hyperOS的头部模糊特效\n类似watchOS的应用启动动画\n蜂窝/列表双布局\n副一屏快捷启动\n独立通知中心堆叠效果\n提供内置图片 / 视频表盘与lunch表盘接入\n提供隐藏应用、图标包功能",
     "category": "系统工具",
     "keywords": [
@@ -1469,16 +1527,16 @@
       "自定义桌面",
       "qidong qi"
     ],
-    "downloadUrl": "https://download.wearstore.asia/APK/Flue%20Next2.3.3(Android8.1%2B).apk",
+    "downloadUrl": "https://download.wearstore.asia/APK/Flue%20Next2.3.5(Android8.1%2B).apk",
     "developer": "柚子柚子皮",
     "historyVersion": [
       {
-        "_rawCode": 24,
-        "version": "2.2.0",
-        "code": 24,
+        "_rawCode": 28,
+        "version": "2.3.3",
+        "code": 28,
         "minSdk": 27,
-        "size": "30.97 MB",
-        "downloadUrl": "https://download.wearstore.asia/APK/Flue%20Next2.2.0(Android8.1%2B).apk"
+        "size": "18.93 MB",
+        "downloadUrl": "https://download.wearstore.asia/APK/Flue%20Next2.3.3(Android8.1%2B).apk"
       }
     ]
   },
@@ -1539,6 +1597,32 @@
     ],
     "downloadUrl": "https://download.wearstore.asia/APK/GOSKI%E5%8E%BB%E6%BB%91%E9%9B%AA1.0(Android11%2B).apk",
     "developer": "北京自然力量科技贸易发展有限公司",
+    "historyVersion": []
+  },
+  {
+    "id": 3397940130,
+    "name": "GRBL Digital Two",
+    "package": "com.grubel.digitaltwo",
+    "_rawCode": 10000013,
+    "version": "4",
+    "code": 10000013,
+    "minSdk": 33,
+    "size": "0.54 MB",
+    "icon": "assets/images/grbldigitaltwo/grbldigitaltwo_icon.webp",
+    "screenshots": [
+      "assets/images/grbldigitaltwo/grbldigitaltwo_1.webp",
+      "assets/images/grbldigitaltwo/grbldigitaltwo_2.webp",
+      "assets/images/grbldigitaltwo/grbldigitaltwo_3.webp"
+    ],
+    "addedTime": 1795142089667,
+    "updateTime": "2026-11-20",
+    "description": "Wear OS 数字表盘，支持 AM/PM 与 12H/24H，5个可更换复杂功能、11个主题、日期显示、主题色 AOD 和闪烁冒号。",
+    "category": "表盘美化",
+    "keywords": [
+      "数字表盘"
+    ],
+    "downloadUrl": "https://download.wearstore.asia/SPLITAPK/GRBL%20Digital%20Two4(Android13%2B).zip",
+    "developer": "Grubel",
     "historyVersion": []
   },
   {
@@ -1696,6 +1780,49 @@
     ],
     "downloadUrl": "https://download.wearstore.asia/APK/Hai1.0(Android8%2B).apk",
     "developer": "mcl0",
+    "historyVersion": []
+  },
+  {
+    "id": 3000709498,
+    "name": "Halcyon",
+    "package": "dev.morty.halcyonsol",
+    "_rawCode": 1,
+    "version": "1.0.0",
+    "code": 1,
+    "minSdk": 34,
+    "size": "0.07 MB",
+    "icon": "assets/images/halcyon/halcyon_icon.webp",
+    "screenshots": [
+      "assets/images/halcyon/halcyon_1.webp",
+      "assets/images/halcyon/halcyon_2.webp"
+    ],
+    "addedTime": 1795142091632,
+    "updateTime": "2026-11-20",
+    "description": "太阳圆形图标沿外环随时间移动，外环不同颜色表示白天、夜晚、日出日落；两个颜色都很好看；AOD也是好好设计的。需安装两个APP，其中一个是获取城市位置的",
+    "category": "表盘美化",
+    "keywords": "",
+    "downloadUrl": "https://download.wearstore.asia/APK/Halcyon1.0(Android14%2B).apk",
+    "developer": "用户名什么意思",
+    "historyVersion": []
+  },
+  {
+    "id": 2913013843,
+    "name": "Halcyon SOL Solar",
+    "package": "dev.morty.halcyonsol.provider",
+    "_rawCode": 1,
+    "version": "1.0.0",
+    "code": 1,
+    "minSdk": 34,
+    "size": "9.05 MB",
+    "icon": "assets/images/halcyonsolsolar/halcyonsolsolar_icon.webp",
+    "screenshots": [],
+    "addedTime": 1795142091746,
+    "updateTime": "2026-11-20",
+    "description": "",
+    "category": "系统工具",
+    "keywords": "",
+    "downloadUrl": "https://download.wearstore.asia/APK/Halcyon%20SOL%20Solar1.0.0(Android14%2B).apk",
+    "developer": "用户名什么意思",
     "historyVersion": []
   },
   {
@@ -2039,6 +2166,33 @@
         "downloadUrl": "https://download.wearstore.asia/APK/MahiroBrowser1.1.2(Android8.1%2B).apk"
       }
     ]
+  },
+  {
+    "id": 126000077,
+    "name": "Maritime",
+    "package": "dev.morty.maritime",
+    "_rawCode": 8,
+    "version": "1.1.6",
+    "code": 8,
+    "minSdk": 34,
+    "size": "0.08 MB",
+    "icon": "assets/images/maritime/maritime_icon.webp",
+    "screenshots": [
+      "assets/images/maritime/maritime_1.webp",
+      "assets/images/maritime/maritime_2.webp"
+    ],
+    "addedTime": 1795142095109,
+    "updateTime": "2026-11-20",
+    "description": "爱马仕航海风格复刻表盘，蓝色外圈为秒针。",
+    "category": "表盘美化",
+    "keywords": [
+      "爱马仕",
+      "航海",
+      "蓝色秒针"
+    ],
+    "downloadUrl": "https://download.wearstore.asia/APK/Maritime1.1.6(Android14%2B).apk",
+    "developer": "用户名什么意思",
+    "historyVersion": []
   },
   {
     "id": 4098625699,
@@ -2600,6 +2754,34 @@
     "historyVersion": []
   },
   {
+    "id": 3742198888,
+    "name": "NetX",
+    "package": "com.netx.wear",
+    "_rawCode": 1930064,
+    "version": "1.3.64",
+    "code": 1930064,
+    "minSdk": 26,
+    "size": "18.27 MB",
+    "icon": "assets/images/netx/netx_icon.webp",
+    "screenshots": [
+      "assets/images/netx/netx_1.webp",
+      "assets/images/netx/netx_2.webp",
+      "assets/images/netx/netx_3.webp"
+    ],
+    "addedTime": 1795142101529,
+    "updateTime": "2026-11-20",
+    "description": "手表版网易云与本地音乐播放器，改自 pixelplayer WearOS 协同应用，自带 MiSans 与 Google Sans。",
+    "category": "影音娱乐",
+    "keywords": [
+      "网易云音乐",
+      "本地音乐",
+      "音乐播放器"
+    ],
+    "downloadUrl": "https://download.wearstore.asia/APK/NetX1.3.64(Android8%2B).apk",
+    "developer": "IRPLG",
+    "historyVersion": []
+  },
+  {
     "id": 2534632284,
     "name": "Next快传",
     "package": "wear.next.transfer",
@@ -3149,6 +3331,41 @@
     "WFcategory": "抽象类"
   },
   {
+    "id": 4122347628,
+    "name": "PuxiQuarkWatch",
+    "package": "com.quarkwatch",
+    "_rawCode": 5,
+    "version": "2.0.1",
+    "code": 5,
+    "minSdk": 30,
+    "size": "4.55 MB",
+    "icon": "assets/images/puxiquarkwatch/puxiquarkwatch_icon.webp",
+    "screenshots": [
+      "assets/images/puxiquarkwatch/puxiquarkwatch_1.webp",
+      "assets/images/puxiquarkwatch/puxiquarkwatch_2.webp",
+      "assets/images/puxiquarkwatch/puxiquarkwatch_3.webp"
+    ],
+    "addedTime": 1795142104725,
+    "updateTime": "2026-11-20",
+    "description": "使用夸克网盘 API 开发的手表端软件，支持扫码自动获取并本地保存 Cookie、在线预览图片/视频/音乐，以及下载网盘内容到手表。",
+    "category": "系统工具",
+    "keywords": [
+      "夸克网盘"
+    ],
+    "downloadUrl": "https://download.wearstore.asia/APK/PuxiQuarkWatch2.0.1(Android11%2B).apk",
+    "developer": "浦西Ovo",
+    "historyVersion": [
+      {
+        "_rawCode": 2,
+        "version": "1.1",
+        "code": 2,
+        "minSdk": 30,
+        "size": "4.28 MB",
+        "downloadUrl": "https://download.wearstore.asia/APK/PuxiQuarkWatch1.1(Android11%2B).apk"
+      }
+    ]
+  },
+  {
     "id": 2388747650,
     "name": "QQ手表版",
     "package": "com.tencent.qqlite",
@@ -3465,6 +3682,35 @@
     "contributor": "清漓染"
   },
   {
+    "id": 3378821419,
+    "name": "Railway Clock",
+    "package": "com.heartdustdesign.railwayclock",
+    "_rawCode": 10000010,
+    "version": "1.0.9",
+    "code": 10000010,
+    "minSdk": 33,
+    "size": "0.49 MB",
+    "icon": "assets/images/railwayclock/railwayclock_icon.webp",
+    "screenshots": [
+      "assets/images/railwayclock/railwayclock_1.webp",
+      "assets/images/railwayclock/railwayclock_2.webp"
+    ],
+    "addedTime": 1795142111562,
+    "updateTime": "2026-11-20",
+    "description": "受瑞士铁路钟启发的表盘，优化网格布局以提升可读性，显示日期和星期，可定制温度或心率，提供四种主题配色，轻量且省电。",
+    "category": "表盘美化",
+    "keywords": [
+      "瑞士铁路钟",
+      "表盘",
+      "日期",
+      "心率",
+      "温度"
+    ],
+    "downloadUrl": "https://download.wearstore.asia/SPLITAPK/Railway%20Clock1.0.9(Android13%2B).zip",
+    "developer": "Plastic Flower Factory",
+    "historyVersion": []
+  },
+  {
     "id": 1401200399,
     "name": "Re-WearBili",
     "package": "cn.spacexc.wearbili.remake",
@@ -3528,6 +3774,34 @@
     "WFcategory": "动态表盘"
   },
   {
+    "id": 4064432501,
+    "name": "SPAKTRUM WS23 Watch face",
+    "package": "com.watchfacestudio.spaktrum_ws23",
+    "_rawCode": 10000001,
+    "version": "1.0.0",
+    "code": 10000001,
+    "minSdk": 34,
+    "size": "1.05 MB",
+    "icon": "assets/images/spaktrumws23watchface/spaktrumws23watchface_icon.webp",
+    "screenshots": [
+      "assets/images/spaktrumws23watchface/spaktrumws23watchface_1.webp",
+      "assets/images/spaktrumws23watchface/spaktrumws23watchface_2.webp"
+    ],
+    "addedTime": 1795142112047,
+    "updateTime": "2026-11-20",
+    "description": "表盘支持12h/24h自动切换，可长按更换背景颜色，显示步数、电量、心率和日期，支持 AOD。",
+    "category": "表盘美化",
+    "keywords": [
+      "表盘",
+      "步数",
+      "心率",
+      "电量"
+    ],
+    "downloadUrl": "https://download.wearstore.asia/SPLITAPK/SPAKTRUM%20WS23%20Watch%20face1.0.0(Android14%2B).zip",
+    "developer": "LUXDIAL Studio",
+    "historyVersion": []
+  },
+  {
     "id": 438354656,
     "name": "SUN",
     "package": "com.watchfacestudio.sunratea2",
@@ -3584,6 +3858,33 @@
       }
     ],
     "phoneLink": "https://pan.baidu.com/s/1bUvmXOl4GExywM8ciZOrdw?pwd=u9u1"
+  },
+  {
+    "id": 3073951421,
+    "name": "Segment34",
+    "package": "dev.morty.segment34",
+    "_rawCode": 1,
+    "version": "1.0.0",
+    "code": 1,
+    "minSdk": 34,
+    "size": "0.41 MB",
+    "icon": "assets/images/segment34/segment34_icon.webp",
+    "screenshots": [
+      "assets/images/segment34/segment34_1.webp",
+      "assets/images/segment34/segment34_2.webp"
+    ],
+    "addedTime": 1795142112306,
+    "updateTime": "2026-11-20",
+    "description": "带 AOD 描边的表盘，左侧黄条显示步数，右侧蓝条显示电量。",
+    "category": "表盘美化",
+    "keywords": [
+      "步数",
+      "电量",
+      "描边"
+    ],
+    "downloadUrl": "https://download.wearstore.asia/APK/segment34_1.0.0_(Android14%2B).apk",
+    "developer": "用户名什么意思",
+    "historyVersion": []
   },
   {
     "id": 58504821,
@@ -3778,6 +4079,31 @@
     "developer": "Waces",
     "historyVersion": [],
     "WFcategory": "大数字"
+  },
+  {
+    "id": 1955710838,
+    "name": "Slides of Time",
+    "package": "dev.morty.slidessol",
+    "_rawCode": 2,
+    "version": "1.1.0",
+    "code": 2,
+    "minSdk": 34,
+    "size": "0.04 MB",
+    "icon": "assets/images/slidesoftime/slidesoftime_icon.webp",
+    "screenshots": [
+      "assets/images/slidesoftime/slidesoftime_1.webp",
+      "assets/images/slidesoftime/slidesoftime_2.webp"
+    ],
+    "addedTime": 1795142113157,
+    "updateTime": "2026-11-20",
+    "description": "目前仅显示时间的表盘，每一位数字以0～9流转，提供4种颜色，AOD 效果较好。",
+    "category": "表盘美化",
+    "keywords": [
+      "数字流转"
+    ],
+    "downloadUrl": "https://download.wearstore.asia/APK/Slides%20of%20Time1.1.0(Android14%2B).apk",
+    "developer": "用户名什么意思",
+    "historyVersion": []
   },
   {
     "id": 3711712971,
@@ -5353,7 +5679,6 @@
       "yuedu"
     ],
     "downloadUrl": "https://download.wearstore.asia/APK/WATCH.YaFeed1.6.3(Android9%2B).apk",
-    "phoneLink": "https://pan.baidu.com/s/1_HfMHYBk2xIQZSDSh1NyRg?pwd=kvem",
     "developer": "1Shin",
     "historyVersion": [
       {
@@ -5364,7 +5689,8 @@
         "size": "5.66 MB",
         "downloadUrl": "https://download.wearstore.asia/APK/YaFeed%E6%89%8B%E8%A1%A81.5.3(Android9%2B).apk"
       }
-    ]
+    ],
+    "phoneLink": "https://pan.baidu.com/s/1_HfMHYBk2xIQZSDSh1NyRg?pwd=kvem"
   },
   {
     "id": 3816311160,
@@ -5987,11 +6313,11 @@
     "id": 1457571723,
     "name": "kiyomusic",
     "package": "com.kiyo.watchmusic",
-    "_rawCode": 6,
-    "version": "1.0.4",
-    "code": 6,
+    "_rawCode": 7,
+    "version": "1.0.5",
+    "code": 7,
     "minSdk": 26,
-    "size": "20.91 MB",
+    "size": "24.85 MB",
     "icon": "assets/images/kiyomusic/kiyomusic_icon.webp",
     "screenshots": [
       "assets/images/kiyomusic/kiyomusic_1.webp",
@@ -5999,7 +6325,7 @@
       "assets/images/kiyomusic/kiyomusic_3.webp"
     ],
     "addedTime": 1791881647659,
-    "updateTime": "2026-10-13",
+    "updateTime": "2026-11-20",
     "description": "手表上免费的全能音乐播放器，本地音乐、网络音乐、音乐MV一个应用装齐。页面美观，动画丰富，支持免费下载、多格式兼容、刷视频MV、一键接入歌单，OPPO手表转表冠调音量，圆屏方屏自动适配。",
     "category": "影音娱乐",
     "keywords": [
@@ -6008,9 +6334,18 @@
       "网络音乐",
       "yinyue"
     ],
-    "downloadUrl": "https://download.wearstore.asia/APK/kiyomusic1.0.4(Android8%2B).apk",
+    "downloadUrl": "https://download.wearstore.asia/APK/kiyomusic1.0.5(Android8%2B).apk",
     "developer": "kiyo",
-    "historyVersion": []
+    "historyVersion": [
+      {
+        "_rawCode": 6,
+        "version": "1.0.4",
+        "code": 6,
+        "minSdk": 26,
+        "size": "20.91 MB",
+        "downloadUrl": "https://download.wearstore.asia/APK/kiyomusic1.0.4(Android8%2B).apk"
+      }
+    ]
   },
   {
     "id": 4020614162,
@@ -6139,19 +6474,21 @@
     "id": 4097213763,
     "name": "orz单词",
     "package": "com.zhanci.app",
-    "_rawCode": 28,
-    "version": "2.0",
-    "code": 28,
+    "_rawCode": 33,
+    "version": "2.2.1",
+    "code": 33,
     "minSdk": 24,
-    "size": "3.28 MB",
+    "size": "4.49 MB",
     "icon": "assets/images/orzdanci/orzdanci_icon.webp",
     "screenshots": [
       "assets/images/orzdanci/orzdanci_1.webp",
       "assets/images/orzdanci/orzdanci_2.webp",
-      "assets/images/orzdanci/orzdanci_3.webp"
+      "assets/images/orzdanci/orzdanci_3.webp",
+      "assets/images/orzdanci/orzdanci_4.webp",
+      "assets/images/orzdanci/orzdanci_5.webp"
     ],
     "addedTime": 1791881649152,
-    "updateTime": "2026-10-13",
+    "updateTime": "2026-11-20",
     "description": "org单词，一个简洁实用、功能强大且完全免费的可选离线学单词+翻译工具\n每日新词+四选一巩固+遗忘曲线自动排复习，支持单词练习模式、联网单词朗读、上滑看释义、右滑查词、模糊搜索、中英互译\n拓展词形变化、近义/反义词（带中文注释）与例句学习；支持重点收藏、错题集、学习记录随时复习、自定义词书、查词可加入今日学习\n词典词库约3万词，可在线查词补词；动画流畅，圆屏/方屏全兼容",
     "category": "学习充电",
     "keywords": [
@@ -6163,9 +6500,18 @@
       "danci",
       "英语"
     ],
-    "downloadUrl": "https://download.wearstore.asia/APK/orz%E5%8D%95%E8%AF%8D2.0(Android7%2B).apk",
+    "downloadUrl": "https://download.wearstore.asia/APK/orz%E5%8D%95%E8%AF%8D2.2.1(Android7%2B).apk",
     "developer": "空听雨",
-    "historyVersion": []
+    "historyVersion": [
+      {
+        "_rawCode": 30,
+        "version": "2.1.1",
+        "code": 30,
+        "minSdk": 24,
+        "size": "4.48 MB",
+        "downloadUrl": "https://download.wearstore.asia/APK/orz%E5%8D%95%E8%AF%8D2.1.1(Android7%2B).apk"
+      }
+    ]
   },
   {
     "id": 1635935105,
@@ -6326,6 +6672,32 @@
     "historyVersion": [],
     "contributor": "清漓染",
     "WFcategory": "代码风格"
+  },
+  {
+    "id": 2125539618,
+    "name": "vivo Ring Numbers",
+    "package": "dev.morty.vivoring",
+    "_rawCode": 2,
+    "version": "1.1.0",
+    "code": 2,
+    "minSdk": 34,
+    "size": "0.56 MB",
+    "icon": "assets/images/vivoringnumbers/vivoringnumbers_icon.webp",
+    "screenshots": [
+      "assets/images/vivoringnumbers/vivoringnumbers_1.webp",
+      "assets/images/vivoringnumbers/vivoringnumbers_2.webp"
+    ],
+    "addedTime": 1795142130366,
+    "updateTime": "2026-11-20",
+    "description": "复刻 VIVO 环绕扭曲数字风格的表盘。",
+    "category": "表盘美化",
+    "keywords": [
+      "环绕数字",
+      "扭曲数字"
+    ],
+    "downloadUrl": "https://download.wearstore.asia/APK/vivo%20Ring%20Numbers1.1.0(Android14%2B).apk",
+    "developer": "用户名什么意思",
+    "historyVersion": []
   },
   {
     "id": 3940386062,
@@ -6885,7 +7257,7 @@
       "农历"
     ],
     "downloadUrl": "https://download.wearstore.asia/APK/%E5%80%92%E6%95%B0%E6%97%A51.3.117_xiaofeng(Android4.1%2B).apk",
-    "developer": "万Lucas",
+    "developer": "Lucas",
     "historyVersion": [
       {
         "_rawCode": 520,
@@ -8543,13 +8915,13 @@
   },
   {
     "id": 1979471110,
-    "name": "弦电子书",
+    "name": "弦电子书Wear",
     "package": "moye.sine.books",
-    "_rawCode": 15,
-    "version": "1.2.0",
-    "code": 15,
+    "_rawCode": 16,
+    "version": "1.3.0",
+    "code": 16,
     "minSdk": 26,
-    "size": "6.58 MB",
+    "size": "6.61 MB",
     "icon": "assets/images/xiandianzishu/xiandianzishu_icon.webp",
     "screenshots": [
       "assets/images/xiandianzishu/xiandianzishu_1.webp",
@@ -8558,7 +8930,7 @@
       "assets/images/xiandianzishu/xiandianzishu_4.webp"
     ],
     "addedTime": 1771760724526,
-    "updateTime": "2026-09-30",
+    "updateTime": "2026-11-20",
     "description": "一款专为安卓手表端设计的强大电子书阅读器，支持导入TXT、EPUB、MOBI、NVB格式。具备TXT导入自动分章、书籍分类、书签管理和全文搜索功能。\n\n内置文件选择器授权：\n\n授予读取存储权限：\nadb shell pm grant moye.sine.books android.permission.READ_EXTERNAL_STORAGE\n授予写入存储权限：\nadb shell pm grant moye.sine.books android.permission.WRITE_EXTERNAL_STORAGE\n授予管理所有文件权限（针对 Android 11+）：\nadb shell appops set moye.sine.books MANAGE_EXTERNAL_STORAGE allow",
     "category": "学习充电",
     "keywords": [
@@ -8573,16 +8945,16 @@
       "ebook reader",
       "dianzi shu"
     ],
-    "downloadUrl": "https://download.wearstore.asia/APK/%E5%BC%A6%E7%94%B5%E5%AD%90%E4%B9%A6Wear1.2.0(Android8%2B).apk",
+    "downloadUrl": "https://download.wearstore.asia/APK/%E5%BC%A6%E7%94%B5%E5%AD%90%E4%B9%A6Wear1.3.0(Android8%2B).apk",
     "developer": "爅峫",
     "historyVersion": [
       {
-        "_rawCode": 13,
-        "version": "1.1.0",
-        "code": 13,
+        "_rawCode": 15,
+        "version": "1.2.0",
+        "code": 15,
         "minSdk": 26,
-        "size": "6.04 MB",
-        "downloadUrl": "https://download.wearstore.asia/APK/%E5%BC%A6%E7%94%B5%E5%AD%90%E4%B9%A6Wear1.1.0(Android8%2B).apk"
+        "size": "6.58 MB",
+        "downloadUrl": "https://download.wearstore.asia/APK/%E5%BC%A6%E7%94%B5%E5%AD%90%E4%B9%A6Wear1.2.0(Android8%2B).apk"
       }
     ]
   },
@@ -11162,11 +11534,11 @@
     "id": 1841659035,
     "name": "腕上哔哩",
     "package": "cn.luern0313.wristbilibili",
-    "_rawCode": 32,
-    "version": "4.6",
-    "code": 32,
+    "_rawCode": 35,
+    "version": "5.0",
+    "code": 35,
     "minSdk": 21,
-    "size": "11.98 MB",
+    "size": "12.32 MB",
     "icon": "assets/images/wanshangbili/wanshangbili_icon.webp",
     "screenshots": [
       "assets/images/wanshangbili/wanshangbili_1.webp",
@@ -11176,7 +11548,7 @@
       "assets/images/wanshangbili/wanshangbili_5.webp"
     ],
     "addedTime": 1764730763176,
-    "updateTime": "2026-06-09",
+    "updateTime": "2026-11-20",
     "description": "一款专为智能手表设计的第三方B站客户端，集成了动态、推荐、番剧、直播等核心内容浏览功能，支持搜索、评论互动与离线缓存，可与“腕上视频”应用联动播放，让你在方寸屏幕间随时刷看B站。",
     "category": "影音娱乐",
     "keywords": [
@@ -11188,16 +11560,16 @@
       "第三方b站",
       "wanshangbili"
     ],
-    "downloadUrl": "https://download.wearstore.asia/APK/%E8%85%95%E4%B8%8A%E5%93%94%E5%93%A94.6(Android5%2B).apk",
+    "downloadUrl": "https://download.wearstore.asia/APK/%E8%85%95%E4%B8%8A%E5%93%94%E5%93%A95.0(Android5%2B).apk",
     "developer": "luern0313",
     "historyVersion": [
       {
-        "_rawCode": 31,
-        "version": "4.5.2",
-        "code": 31,
+        "_rawCode": 32,
+        "version": "4.6",
+        "code": 32,
         "minSdk": 21,
-        "size": "11.83 MB",
-        "downloadUrl": "https://download.wearstore.asia/APK/%E8%85%95%E4%B8%8A%E5%93%94%E5%93%A9%204.5.2%20(Android%205%20%2B).apk"
+        "size": "11.98 MB",
+        "downloadUrl": "https://download.wearstore.asia/APK/%E8%85%95%E4%B8%8A%E5%93%94%E5%93%A94.6(Android5%2B).apk"
       }
     ],
     "recommendIds": [
