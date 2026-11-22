@@ -511,7 +511,7 @@ body {
 .card-big-icon-box {
   width: 100%;
   aspect-ratio: 1 / 1;
-  background-color: var(--input-bg);
+  background-color: var(--modal-bg);
   border: 1.5px solid var(--input-border);
   border-radius: 22%;
   overflow: hidden;
@@ -523,20 +523,8 @@ body {
   max-width: 100%;
 }
 
-/* 图标盒子 */
-.card-big-icon-box {
-  width: 100%;
-  aspect-ratio: 1 / 1;
+.wf-category-card .card-big-icon-box {
   background-color: var(--input-bg);
-  border: 1.5px solid var(--input-border);
-  border-radius: 22%;
-  overflow: hidden;
-  margin-bottom: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: var(--shadow-sm);
-  max-width: 100%;
 }
 
 .card-big-icon-box img {

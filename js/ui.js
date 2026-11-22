@@ -25,7 +25,7 @@ export function createCard(app, isBig = false) {
   }
 
   if (isBig) {
-    card.className += ' card-big';
+    card.classList.add('card-big');
     card.innerHTML = `
             <div class="card-big-icon-box">
                 <img src="${escapeHtml(app.icon)}" onerror="handleImgError(this)">
@@ -33,7 +33,7 @@ export function createCard(app, isBig = false) {
             <div class="card-big-title">${escapeHtml(app.name)}</div>
         `;
   } else {
-    card.className += ' card';
+    card.classList.add('card');
     const displayDev = app.modAuthor ? app.modAuthor : (app.developer || '未知开发者');
     card.innerHTML = `
             <img src="${escapeHtml(app.icon)}" class="card-icon" onerror="handleImgError(this)">
@@ -50,14 +50,17 @@ export function createCard(app, isBig = false) {
   return card;
 }
 
-export function renderDevModal(title, appsList) { createWindow(title, appsList, 'dev', 'data-dev-name'); }
+export function renderDevModal(title, appsList) {
+  createWindow(title, appsList, 'dev', 'data-dev-name', true);
+}
+
 export function renderCategoryModal(title, appsList, useBigCards = true) {
   const isKeepOriginal = (title === '最新上架' || title === '最近更新');
   const isBigMode = isKeepOriginal ? false : useBigCards;
   createWindow(title, appsList, 'category', 'data-name', isBigMode);
 }
 
-function createWindow(title, list, type, attr, isBigMode = false) {
+function createWindow(title, list, type, attr, useBigCards = false) {
   let maxZ = 1300;
   document.querySelectorAll('.modal-overlay').forEach(el => {
     maxZ = Math.max(maxZ, parseInt(window.getComputedStyle(el).zIndex) || 1300);
@@ -70,6 +73,8 @@ function createWindow(title, list, type, attr, isBigMode = false) {
   m.setAttribute(attr, title);
   m.setAttribute('data-dynamic', 'true');
 
+  const isKeepOriginal = (title === '最新上架' || title === '最近更新');
+  const isBigMode = isKeepOriginal ? false : (type === 'dev' || useBigCards);
   const gridClass = isBigMode ? 'big-cards-grid' : 'cards-grid';
 
   m.innerHTML = `
@@ -87,7 +92,7 @@ function createWindow(title, list, type, attr, isBigMode = false) {
 
   const container = m.querySelector(`.${gridClass}`);
   if (list.length === 0) {
-    container.innerHTML = '<div class="no-result-tip">暂无兼容该系统的应用</div>';
+    container.innerHTML = '<div class="no-result-tip">暂无相关应用</div>';
   } else {
     list.forEach(app => container.appendChild(createCard(app, isBigMode)));
   }
