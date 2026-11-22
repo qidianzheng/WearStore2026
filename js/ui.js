@@ -51,11 +51,18 @@ export function createCard(app, isBig = false) {
 }
 
 export function renderDevModal(title, appsList) { createWindow(title, appsList, 'dev', 'data-dev-name'); }
-export function renderCategoryModal(title, appsList) { createWindow(title, appsList, 'category', 'data-name'); }
+export function renderCategoryModal(title, appsList, useBigCards = true) {
+  const isKeepOriginal = (title === '最新上架' || title === '最近更新');
+  const isBigMode = isKeepOriginal ? false : useBigCards;
+  createWindow(title, appsList, 'category', 'data-name', isBigMode);
+}
 
-function createWindow(title, list, type, attr) {
+function createWindow(title, list, type, attr, isBigMode = false) {
   let maxZ = 1300;
-  document.querySelectorAll('.modal-overlay').forEach(el => maxZ = Math.max(maxZ, parseInt(window.getComputedStyle(el).zIndex) || 1300));
+  document.querySelectorAll('.modal-overlay').forEach(el => {
+    maxZ = Math.max(maxZ, parseInt(window.getComputedStyle(el).zIndex) || 1300);
+  });
+
   const m = document.createElement('div');
   m.className = 'modal-overlay';
   m.style.zIndex = maxZ + 10;
@@ -63,8 +70,6 @@ function createWindow(title, list, type, attr) {
   m.setAttribute(attr, title);
   m.setAttribute('data-dynamic', 'true');
 
-  const isWatchface = list.length > 0 && (list[0].category === "表盘美化" || list[0].category === "表盘专区");
-  const isBigMode = (type === 'dev') || (title === '表盘美化') || (title === '表盘专区') || isWatchface;
   const gridClass = isBigMode ? 'big-cards-grid' : 'cards-grid';
 
   m.innerHTML = `
@@ -81,8 +86,11 @@ function createWindow(title, list, type, attr) {
         </div>`;
 
   const container = m.querySelector(`.${gridClass}`);
-  if (list.length === 0) container.innerHTML = '<div class="no-result-tip">暂无兼容该系统的应用</div>';
-  else list.forEach(app => container.appendChild(createCard(app, isBigMode)));
+  if (list.length === 0) {
+    container.innerHTML = '<div class="no-result-tip">暂无兼容该系统的应用</div>';
+  } else {
+    list.forEach(app => container.appendChild(createCard(app, isBigMode)));
+  }
 
   m.querySelector('.header-close-img').onclick = () => smartBack();
   document.body.appendChild(m);

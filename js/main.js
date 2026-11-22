@@ -25,7 +25,7 @@ async function init() {
   initFuse();
   bindEvents();
   checkHashLink();
-  checkUserVersion(); // 初始化版本按钮
+  checkUserVersion();
   if (!window.location.hash && elements.searchInput.value === '') renderRandomHome();
 }
 
@@ -37,8 +37,8 @@ function initFuse() {
     distance: 100,
     ignoreLocation: true,
     keys: [
-      { name: 'name', weight: 1.0 },     // 名字权重最高
-      { name: 'keywords', weight: 0.7 } // 关键词次之
+      { name: 'name', weight: 1.0 },
+      { name: 'keywords', weight: 0.7 }
     ]
   };
   fuse = new Fuse(allApps, options);
@@ -95,7 +95,7 @@ function checkHashLink() {
     return;
   }
 
-  // 2. 智能堆栈拦截（防止返回时丢失滚动位置）
+  // 2. 智能堆栈拦截
   const existingModal = activeModals.find(m => {
     if (hash === '#menu') return m.getAttribute('data-type') === 'menu';
     if (hash === '#donate') return m.getAttribute('data-type') === 'donate';
@@ -184,12 +184,11 @@ function checkHashLink() {
           const appCat = (a.category && a.category.trim() !== "") ? a.category : "其他";
           return appCat === catName && isAppGloballyCompatible(a, userApi);
         });
-        renderCategoryModal(catName, filtered);
+        renderCategoryModal(catName, filtered, true);
         setPageTitle(catName);
       }
     }
   }
-  // 🔥 处理带斜杠等特殊字符的表盘子分类跳转
   else if (hash.startsWith('#wf-category=')) {
     const subName = safeDecode(hash.substring('#wf-category='.length));
     const userApi = parseInt(localStorage.getItem('userApiLevel')) || 0;
@@ -209,7 +208,7 @@ function checkHashLink() {
       return cats.includes(subName);
     });
 
-    renderCategoryModal(subName, filtered);
+    renderCategoryModal(subName, filtered, true);
     setPageTitle(`表盘 - ${subName}`);
   }
   else if (decodedHash.startsWith('#list=')) {
@@ -218,11 +217,11 @@ function checkHashLink() {
     let sorted = allApps.filter(a => isAppGloballyCompatible(a, userApi));
     if (type === 'new') {
       sorted.sort((a, b) => (b.addedTime || 0) - (a.addedTime || 0));
-      renderCategoryModal("最新上架", sorted.slice(0, 30));
+      renderCategoryModal("最新上架", sorted.slice(0, 30), false);
       setPageTitle("最新上架");
     } else {
       sorted.sort((a, b) => new Date(b.updateTime || 0) - new Date(a.updateTime || 0));
-      renderCategoryModal("最近更新", sorted.slice(0, 30));
+      renderCategoryModal("最近更新", sorted.slice(0, 30), false);
       setPageTitle("最近更新");
     }
   }
